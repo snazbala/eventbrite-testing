@@ -1,33 +1,45 @@
 <!-- You can customize this button any way you like -->
 <button id="eventbrite-widget-modal-trigger-45181383735" type="button">Buy Tickets</button>
 <noscript></a>Buy Tickets on Eventbrite</noscript>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-31671209-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+    gtag('config', 'UA-31671209-3');
+  </script>
 
-<script type="text/javascript">
-  <!-- Google Analytics -->
 
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
 
-    ga('create', 'UA-31671209-2', 'auto');
-  
-    ga('send', 'pageview');
-  
-    ga(function(tracker) {
-      var clientId = tracker.get('clientId');
-      console.log('not string', clientId);
-      window.EBWidgets.createWidget({
-          widgetType: 'checkout',
-          eventId: '45181383735',
-          modalTriggerElementId: 'eventbrite-widget-modal-trigger-45181383735', 
-          googleAnalyticsClientId: clientId,
-          modal: true
-      });
-    })
-    <!-- End Google Analytics -->
+  <script type="text/javascript">
+    <!-- Google Analytics -->
 
-     
-</script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-31671209-3', 'auto');
+
+      ga('send', 'pageview');
+
+      ga(function(tracker) {
+        var clientId = tracker.get('clientId');
+        console.log('not string', clientId);
+        window.EBWidgets.createWidget({
+            widgetType: 'checkout',
+            eventId: '45181383735',
+            modalTriggerElementId: 'eventbrite-widget-modal-trigger-45181383735', 
+            googleAnalyticsClientId: clientId,
+            modal: true
+        });
+      })
+      <!-- End Google Analytics -->
+
+
+  </script>
+</head>
