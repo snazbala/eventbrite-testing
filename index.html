@@ -19,8 +19,8 @@
     function getClientId() {
       ga(function(tracker) {
         var clientId = tracker.get('clientId');
+        return `${clientId}`;
       })
-      return `${clientId}`;
     }
 
     var clientId = getClientId();
