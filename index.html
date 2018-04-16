@@ -19,7 +19,7 @@
     function getClientId() {
       ga(function(tracker) {
         var clientId = tracker.get('clientId');
-        return `${clientId}`;
+        return clientId.toString();
       })
     }
 
@@ -32,7 +32,7 @@
         widgetType: 'checkout',
         eventId: '45181383735',
         modalTriggerElementId: 'eventbrite-widget-modal-trigger-45181383735', 
-        googleAnalyticsClientId: '123456',
+        googleAnalyticsClientId: clientId,
         modal: true
     });
 </script>
