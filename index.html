@@ -19,6 +19,7 @@
     function getClientId() {
       ga(function(tracker) {
         var clientId = tracker.get('clientId');
+        console.log(clientId);
         return `${clientId}`;
       })
     }
