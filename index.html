@@ -20,14 +20,14 @@
       ga(function(tracker) {
         var clientId = tracker.get('clientId');
         console.log('inside', clientId);
-        window.EBWidgets.createWidget({
+      })
+      window.EBWidgets.createWidget({
             widgetType: 'checkout',
             eventId: '45181383735',
             modalTriggerElementId: 'eventbrite-widget-modal-trigger-45181383735', 
             googleAnalyticsClientId: `${clientId}`,
             modal: true
-        });
-      })
+      });
     }
 
     <!-- End Google Analytics -->
