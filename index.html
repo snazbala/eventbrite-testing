@@ -19,13 +19,13 @@
     function getClientId() {
       ga(function(tracker) {
         var clientId = tracker.get('clientId');
-        console.log(clientId);
+        console.log('inside', clientId);
         return `${clientId}`;
       })
     }
 
     var clientId = getClientId();
-    console.log(clientId);
+    console.log('outside', clientId);
     <!-- End Google Analytics -->
 
       
