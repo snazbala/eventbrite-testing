@@ -20,20 +20,17 @@
       ga(function(tracker) {
         var clientId = tracker.get('clientId');
         console.log('inside', clientId);
-        return `${clientId}`;
+        window.EBWidgets.createWidget({
+            widgetType: 'checkout',
+            eventId: '45181383735',
+            modalTriggerElementId: 'eventbrite-widget-modal-trigger-45181383735', 
+            googleAnalyticsClientId: `${clientId}`,
+            modal: true
+        });
       })
     }
 
-    var clientId = getClientId();
-    console.log('outside', clientId);
     <!-- End Google Analytics -->
 
-      
-    window.EBWidgets.createWidget({
-        widgetType: 'checkout',
-        eventId: '45181383735',
-        modalTriggerElementId: 'eventbrite-widget-modal-trigger-45181383735', 
-        googleAnalyticsClientId: clientId,
-        modal: true
-    });
+     
 </script>
